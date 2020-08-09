@@ -16,4 +16,5 @@ function checkLoginState() {
     form.append("password",`facebook:${data.id}`)
 
     await fetch("/api/register",{method:"POST",body:form});
- }
+ 
+}
