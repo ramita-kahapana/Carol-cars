@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+@layout('layout')
+@section("style-section")
+    {{ style("css/register") }}
+    @endsection
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>register</title>
-    {{ style("css/register")}}
-</head>
-
-<body>
-
+    @section("content")
     <div class="register">Register</div><br>
     <form>
         <p>
@@ -46,6 +40,4 @@
             <input type="submit" value="register">
         </div>
     </form>
-</body>
-
-</html>
+    @endsection
