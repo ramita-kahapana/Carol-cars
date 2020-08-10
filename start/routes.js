@@ -28,4 +28,9 @@ Route.post("/api/register", "AuthController.registerUser")
 
 Route.get("/home", "AuthController.home")
 
-
+Route.get("/product", "AuthController.product")
+Route.get("/promotion", "AuthController.promotion")
+Route.get("/service", "AuthController.service")
+Route.get("/supercar", "AuthController.supercar")
+Route.get("/campervan", "AuthController.campervan")
+Route.get("/car", "AuthController.car")
