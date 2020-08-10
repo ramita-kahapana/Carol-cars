@@ -1,0 +1,105 @@
+.navbar {
+    width: 100vw;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    padding-left: 2vw;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+}
+
+.menu a:hover {
+    background-color: darkgoldenrod;
+    color: black;
+}
+
+.btn {
+    width: auto;
+    text-decoration: none;
+    display: inline-flex;
+    padding: 2vw;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1vw;
+}
+
+.bar {
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+    height: auto;
+    padding: 0 20px 20px 20px;
+}
+
+.button {
+    width: auto;
+    padding: 1vh;
+    align-items: center;
+    justify-content: center;
+    height: 3vh;
+    color: black;
+    font-size: 1vw;
+    background-color: darkgoldenrod;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    background-color: darkgoldenrod;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container {
+    height: auto;
+    width: 100%;
+}
+
+.content {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+}
+
+.box {
+    display: flex;
+    width: 80%;
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}

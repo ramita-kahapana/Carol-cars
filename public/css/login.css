@@ -1,10 +1,32 @@
-.container{
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+body{
+    background-color:#333333
 }
-.hero-text{
-    font-size: 3rem;
+.sign-in{
+    color: yellow;
+    font-size: 30px;
+    text-align: center;
 }
+.username{
+    border: 3px solid red;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: white;
+
+    
+}
+.password{
+    border: 3px solid red;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: white;
+    
+}
+.button{
+    text-align: center;
+}
+
+.button button{
+    background-color: red;
+}
+
+

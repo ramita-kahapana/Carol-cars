@@ -20,14 +20,20 @@ const AuthController = require('../app/Controllers/Http/AuthController');
 const Route = use('Route')
 
 Route.on('/').render('welcome')
-// Route.on("/login").render("login");
+
+Route.get("/login", "AuthController.login")
+Route.post("/login", "AuthController.loginUser")
+
+Route.get('/register', "AuthController.register")
+Route.post("/register", "AuthController.registerUser")
+Route.post("/api/register", "AuthController.registerUser")
 
 
+Route.get("/home", "AuthController.home")
 
-Route.on("/").render("welcome");
-
-Route.get("/login","AuthController.login");
-
-Route.get("/register", ( { View }) => {
-    return View.render("register");
-});
+Route.get("/product", "AuthController.product")
+Route.get("/promotion", "AuthController.promotion")
+Route.get("/service", "AuthController.service")
+Route.get("/supercar", "AuthController.supercar")
+Route.get("/campervan", "AuthController.campervan")
+Route.get("/car", "AuthController.car")
