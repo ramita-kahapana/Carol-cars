@@ -46,14 +46,12 @@ class AuthController {
     service({ view, request, response }) {
         return view.render("service");
     }
-    car({ view, request, response }) {
-        return view.render("car");
-    }
-    campervan({ view, request, response }) {
-        return view.render("campervan");
-    }
-    supercar({ view, request, response }) {
-        return view.render("supercar");
+
+    async serviceGet({ request, response }) {
+        const { name, mobile, report } = request.body
+        await Database.insert({ name, mobile, report }).into("starts")
+
+        return response.redirect("service")
     }
     detail({ view, request, response }) {
         return view.render("detail");
