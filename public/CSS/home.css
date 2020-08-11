@@ -61,7 +61,6 @@
 .card {
     width: 300px;
     height: 300px;
-    background-color: darkblue;
     margin: 5rem;
 }
 
@@ -112,13 +111,17 @@ h2 {
 }
 
 a {
+    color: white;
     text-decoration: none;
 }
 
 .footer {
-    height: 100px;
+    height: 30%;
     background-color: black;
     color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .content {
@@ -148,4 +151,19 @@ a {
 img {
     width: 100%;
     height: 100%;
+}
+
+.box-footer {
+    width: 50%;
+    height: 100%;
+}
+
+.box-footer2 {
+    width: 50%;
+    height: 100%;
+}
+
+.card img {
+    width: 100%;
+    height: 75%;
 }

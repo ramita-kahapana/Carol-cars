@@ -1,6 +1,6 @@
 .navbar {
     width: 100vw;
-    height: 100px;
+    height: 10%;
     background-color: black;
     display: flex;
     flex-direction: row;
@@ -39,5 +39,85 @@
 }
 
 a {
+    color: white;
     text-decoration: none;
+}
+
+.footer {
+    height: 30%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    height: 70%;
+    width: 100%;
+    flex-direction: column;
+}
+
+h2,
+h4 {
+    color: black;
+}
+
+.text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: auto;
+    border-bottom: 1px solid black;
+    width: auto;
+}
+
+.box-footer {
+    width: 50%;
+    height: 100%;
+}
+
+.box-footer2 {
+    width: 50%;
+    height: 100%;
+}
+
+.box-form {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    margin-top: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 5 solid black;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 5 solid black;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
 }

@@ -1,37 +1,84 @@
-body{
-    background-color: #333333;
-    }
-    
-    .register{
-        font-size: 80px;
-        color: yellow;
-        text-align: center;
-    }
-    .box1{
-        font-size: 20px;
-        text-align: center;
-        color: yellow;
-    }
-    .box2{
-        font-size: 20px;
-        text-align: center;
-        color: yellow;
-    
-    }
-    .box3{
-        font-size: 20px;
-        text-align: center;
-        color: yellow;
-    }
-    .box4{
-        font-size: 20px;
-        text-align: center;
-        color: yellow;
-    }
-    .button{
-        text-align: center  ;
-    }
-    .ok{
-    text-align: center;
-    color: yellow;
-    }
+.navbar {
+    width: 100vw;
+    height: 10%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+}
+
+.logo {
+    font-size: 70px;
+    display: flex;
+    padding-left: 2vw;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+}
+
+.footer {
+    height: 30%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.box-footer {
+    width: 50%;
+    height: 100%;
+}
+
+.box-footer2 {
+    width: 50%;
+    height: 100%;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.button input {
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(156, 23, 0);
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    width: 50%;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
