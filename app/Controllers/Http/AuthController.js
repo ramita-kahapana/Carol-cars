@@ -9,11 +9,16 @@ class AuthController {
         return view.render("login");
     }
 
-    loginUser({ view, request, response }) {
+    async loginUser({ view, request, response }) {
         const { username, password } = request.body
-
+        const index = await Database.select("*").from('customers').where({ username, password })
+        if (index.length) {
+            return response.redirect('/home')
+        } else {
+            return response.redirect("/login")
+        }
         //return view.render("login")
-        return response.redirect("/login")
+
 
     }
 
