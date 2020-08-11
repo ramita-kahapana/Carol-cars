@@ -68,6 +68,7 @@
 }
 
 .box-s {
+    margin-bottom: 2%;
     border: solid black;
     width: 30%;
     height: 50%;
@@ -89,6 +90,9 @@
 }
 
 .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 2%;
 }
 
@@ -108,4 +112,10 @@
 
 p {
     margin-left: 5%;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+    display: flex;
 }
