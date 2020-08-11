@@ -55,10 +55,11 @@ a {
 .container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 5%;
     height: 70%;
     width: 100%;
+    flex-direction: column;
 }
 
 h2,
@@ -84,4 +85,39 @@ h4 {
 .box-footer2 {
     width: 50%;
     height: 100%;
+}
+
+.box-form {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    margin-top: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 5 solid black;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 5 solid black;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
 }
