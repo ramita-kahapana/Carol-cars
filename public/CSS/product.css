@@ -122,6 +122,10 @@ h1 {
     align-items: center;
 }
 
+.text {
+    margin-bottom: -4%;
+}
+
 .box-footer {
     width: 50%;
     height: 100%;
