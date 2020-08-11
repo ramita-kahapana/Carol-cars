@@ -1,32 +1,10 @@
-body{
-    background-color:#333333
-}
-.sign-in{
-    color: yellow;
-    font-size: 30px;
-    text-align: center;
-}
-.username{
-    border: 3px solid red;
-    padding: 20px;
-    border-radius: 30px;
-    background-color: white;
 
-    
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
-.password{
-    border: 3px solid red;
-    padding: 20px;
-    border-radius: 30px;
-    background-color: white;
-    
+.hero-text{
+    font-size: 3rem;
 }
-.button{
-    text-align: center;
-}
-
-.button button{
-    background-color: red;
-}
-
-
