@@ -9,7 +9,8 @@
         <div class="logo">Carol Cars</div>
     </div>
 
-    <form>
+    <form action="{{ route('/register')}}" method="POST">
+        {{ csrfField() }}
         <div class="container">
            <h1>Create Account</h1>
            <input type="text" name="name" placeholder="Name">
