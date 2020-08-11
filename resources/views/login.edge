@@ -9,7 +9,8 @@
         <div class="logo">Carol Cars</div>
     </div>
 
-    <form>
+    <form action="{{route('/login')}}" method="post">
+        {{ csrfField() }}
         <div class="container">
            <h1>Sign-in</h1>
     
@@ -17,7 +18,7 @@
                 <input type="text" name="username"placeholder="USERNAME" >   
 
                 <p>Password:</p>
-                <input type="password" name="password" placeholder="PASSWORD" >
+                <input type="text" name="password" placeholder="PASSWORD" >
 
                 <div class="button">
                 <input type="submit" value="login">
