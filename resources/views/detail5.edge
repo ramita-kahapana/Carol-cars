@@ -1,0 +1,59 @@
+@layout('layout')
+@section("style-section")
+    {{ style("css/detail") }}
+    @endsection
+
+    @section("content")
+    <div class="navbar">
+        <div class="logo">Carol Cars</div>
+        <div class="menu">
+            <a href="/home" class="btn">Home</a>
+            <a href="/promotion" class="btn">Promotion</a>
+            <a href="/product"class="btn">Product</a>
+            <a href="/service"class="btn">Service</a>
+            <a href="/login" class="btn">Login</a>
+            <a href="/register" class="btn">Register</a>
+        </div>
+    </div>
+        <div class="box">
+            <div class="card">
+                <img src="images/car9.jpg" >
+            </div>
+            <div class="box-s">
+                <div class="box-m">
+                    <p><b>Name</b>: Mercedes-Benz ViTO</p>
+                    <p><b>Detail</b>: There are 2 versions to choose from: a 2.2-liter, four-cylinder engine. 
+                        Or a 3-liter V6 diesel, both of which offer great power and torque.
+                        Rear wheel drive It comes with a 6 speed automatic or manual transmission.
+                        Model BlueEFFICIENCY Provide better driving performance and fuel economy Standard model, 
+                        saving fuel at 63 kilometers per gallon. And other models at 59 kilometers per gallon</p>
+                    <p><b>Price</b>: 1,500,000 Bath</p>    
+                </div>
+                <div class="modal">
+                    <button class="button">Reservation</button>
+                    <button class="button">Buying</button>
+                </div>
+            </div>
+            
+        </div>
+
+    <div class="footer">
+        <div class="box-footer">
+                <ul>
+                        <p>Carol Cars</p>
+                        <li><a href="/home" >Home</a></li>
+                        <li><a href="/promotion" >promotion</a></li>
+                        <li><a href="/product" >Product</a></li>
+                        <li><a href="/service" >Service</a></li>
+                </ul>
+        </div>
+        <div class="box-footer2">
+                <p>Carol-Cars Motor Vehicle</p>
+                <p>186/8 Moo 1, Wichit, Mueang, Phuket 83000</p>
+                <p>Contact Center</p>
+                <p> (66) 9-9357-5550 24/7 service</p>
+                <p>E-mail contactcenter@carolcars.co.th</p>
+                <p>Line ID @carolcarscontact</p>
+        </div>
+    </div>
+    @endsection
