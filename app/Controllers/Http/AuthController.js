@@ -21,7 +21,7 @@ class AuthController {
         return view.render("register");
     }
 
-    contact({ view }){
+    contact({ view }) {
         return view.render("contact");
     }
 
@@ -54,6 +54,9 @@ class AuthController {
     }
     supercar({ view, request, response }) {
         return view.render("supercar");
+    }
+    detail({ view, request, response }) {
+        return view.render("detail");
     }
 }
 
