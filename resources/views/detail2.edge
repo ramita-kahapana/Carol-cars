@@ -1,0 +1,58 @@
+@layout('layout')
+@section("style-section")
+    {{ style("css/detail") }}
+    @endsection
+
+    @section("content")
+    <div class="navbar">
+        <div class="logo">Carol Cars</div>
+        <div class="menu">
+            <a href="/home" class="btn">Home</a>
+            <a href="/promotion" class="btn">Promotion</a>
+            <a href="/product"class="btn">Product</a>
+            <a href="/service"class="btn">Service</a>
+            <a href="/login" class="btn">Login</a>
+            <a href="/register" class="btn">Register</a>
+        </div>
+    </div>
+        <div class="box">
+            <div class="card">
+                <img src="images/car1.jpg" >
+            </div>
+            <div class="box-s">
+                <div class="box-m">
+                    <p><b>Name</b>: Toyota Alphard</p>
+                    <p><b>Detail</b>: Toyota Alphard At the 39th Bangkok International Motor Show, the Toyota Alphard Hybrid will be showcased at the event. New from the new chrome-designed front grille, 
+                        looks more voluminous, with new LED projector headlights with Daytime Running Lights and Sequential front-rear turn signals, in line with the new design of the front bumper and also redesigned the fog lamp position. 
+                        For a perfect composition The rear has been adjusted in terms of a new chrome license plate frame, a longer design, in line with new LED taillights, new 17-inch alloy wheels with 225/60 R17 tires, and new unique front and rear skirts.
+                        The dimensions of the car remain the same, starting from 4,945 mm in length, 1,850 mm in width, 1,895 mm in height, 3,000 mm in wheelbase, 165 mm from the ground, and 65 liters of fuel tank capacity.</p>
+                    <p><b>Price</b>: 1,500,000 Bath</p>    
+                </div>
+                <div class="modal">
+                    <button class="button">Reservation</button>
+                    <button class="button">Buying</button>
+                </div>
+            </div>
+            
+        </div>
+
+    <div class="footer">
+        <div class="box-footer">
+                <ul>
+                        <p>Carol Cars</p>
+                        <li><a href="/home" >Home</a></li>
+                        <li><a href="/promotion" >promotion</a></li>
+                        <li><a href="/product" >Product</a></li>
+                        <li><a href="/service" >Service</a></li>
+                </ul>
+        </div>
+        <div class="box-footer2">
+                <p>Carol-Cars Motor Vehicle</p>
+                <p>186/8 Moo 1, Wichit, Mueang, Phuket 83000</p>
+                <p>Contact Center</p>
+                <p> (66) 9-9357-5550 24/7 service</p>
+                <p>E-mail contactcenter@carolcars.co.th</p>
+                <p>Line ID @carolcarscontact</p>
+        </div>
+    </div>
+    @endsection
