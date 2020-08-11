@@ -1,6 +1,6 @@
 .navbar {
     width: 100vw;
-    height: 100px;
+    height: 10%;
     background-color: black;
     display: flex;
     flex-direction: row;
@@ -39,5 +39,49 @@
 }
 
 a {
+    color: white;
     text-decoration: none;
+}
+
+.footer {
+    height: 30%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 5%;
+    height: 70%;
+    width: 100%;
+}
+
+h2,
+h4 {
+    color: black;
+}
+
+.text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: auto;
+    border-bottom: 1px solid black;
+    width: auto;
+}
+
+.box-footer {
+    width: 50%;
+    height: 100%;
+}
+
+.box-footer2 {
+    width: 50%;
+    height: 100%;
 }

@@ -4,40 +4,42 @@
     @endsection
 
     @section("content")
-    <div class="register">Register</div><br>
+   
+    <div class="navbar">
+        <div class="logo">Carol Cars</div>
+    </div>
+
     <form>
-        <p>
-        <div class="box1">
-            username <br>
-            <input type="text" name="username"><br>
-        </div>
-        </p>
-        <p>
-        <div class="box2">
-            passworld <br>
-            <input type="password" name="pwd">
-        </div>
-
-        </p>
-        <p>
-        <div class="box3">
-            againpassworld <br>
-            <input type="password" name="pwd">
-        </div>
-        </p>
-        <p>
-        <div class="box4">
-            g-mail <br>
-            <input type="gmail" name="email">
-        </div>
-        </p>
-
-        <div class="ok">
-            <input type="radio" name="like" value="like">I understand and agree to Terms of Service and Privacy
-            Policy<br>
-        </div>
-       <p></p> <div class="button">
-            <input type="submit" value="register">
+        <div class="container">
+           <h1>Create Account</h1>
+           <input type="text" name="name" placeholder="Name">
+           <input type="text" name="lastname" placeholder="lastname" >
+           <input type="text" name="username" placeholder="Username" >
+           <input type="text" name="password" placeholder="Password" >
+            
+           <div class="button">
+                <input type="submit" value="register">
+            </div>
         </div>
     </form>
+
+    <div class="footer">
+        <div class="box-footer">
+                <ul>
+                        <p>Carol Cars</p>
+                        <li><a href="/home" >Home</a></li>
+                        <li><a href="/promotion" >promotion</a></li>
+                        <li><a href="/product" >Product</a></li>
+                        <li><a href="/service" >Service</a></li>
+                </ul>
+        </div>
+        <div class="box-footer2">
+                <p>Carol-Cars Motor Vehicle</p>
+                <p>186/8 Moo 1, Wichit, Mueang, Phuket 83000</p>
+                <p>Contact Center</p>
+                <p> (66) 9-9357-5550 24/7 service</p>
+                <p>E-mail contactcenter@carolcars.co.th</p>
+                <p>Line ID @carolcarscontact</p>
+        </div>
+</div>
     @endsection
