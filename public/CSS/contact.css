@@ -1,0 +1,94 @@
+body{
+    
+}
+
+.navbar {
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    padding-left: 2vw;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+}
+
+.menu a:hover {
+    background-color: darkgoldenrod;
+    color: black;
+}
+
+.btn {
+    width: auto;
+    text-decoration: none;
+    display: inline-flex;
+    padding: 2vw;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1vw;
+}
+
+.isready{
+    font-size: 30px;
+    
+
+}
+
+.isready p{
+    margin-bottom: 20px;
+}
+
+.line1 p{
+    margin: 0px;
+    
+    margin-bottom: 10px;
+}
+
+.line2 p{
+    font-size: 30px;
+    
+    margin-bottom: 30px;
+    margin-bottom: 10px;
+
+}
+
+.line3 p{
+    margin:0px;
+}
+  
+.fa {
+    padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .line5 p{
+      margin-left: 810px;
+  }
+  .fa-facebook{
+      margin-left: 800px;
+  }

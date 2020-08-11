@@ -21,6 +21,10 @@ class AuthController {
         return view.render("register");
     }
 
+    contact({ view }){
+        return view.render("contact");
+    }
+
     async registerUser({ request, response }) {
         const { email, password, username } = request.body
         await Database.from("users").insert({ email, password, username });
