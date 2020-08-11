@@ -26,11 +26,11 @@ class AuthController {
     }
 
     async registerUser({ request, response }) {
-        const { email, password, username } = request.body
-        await Database.from("users").insert({ email, password, username });
+        const { name, lastname, username, password } = request.body
+        await Database.from("customers").insert({ name, lastname, username, password });
         //await Database.insert({email,password}).into("users") เขียนได้สองแบบ
 
-        return response.redirect("/register");
+        return response.redirect("/login");
     }
 
     home({ view, request, response }) {
@@ -56,6 +56,22 @@ class AuthController {
     detail({ view, request, response }) {
         return view.render("detail");
     }
+    detail2({ view, request, response }) {
+        return view.render("detail2");
+    }
+    detail3({ view, request, response }) {
+        return view.render("detail3");
+    }
+    detail4({ view, request, response }) {
+        return view.render("detail4");
+    }
+    detail5({ view, request, response }) {
+        return view.render("detail5");
+    }
+    detail6({ view, request, response }) {
+        return view.render("detail6");
+    }
+
 }
 
 module.exports = AuthController
