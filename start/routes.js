@@ -42,3 +42,5 @@ Route.get("/detail3", "AuthController.detail3")
 Route.get("/detail4", "AuthController.detail4")
 Route.get("/detail5", "AuthController.detail5")
 Route.get("/detail6", "AuthController.detail6")
+
+Route.get("/layout", "AuthController.renderLayout")
