@@ -36,7 +36,13 @@ Route.get("/promotion", "AuthController.promotion")
 Route.get("/service", "AuthController.service")
 Route.post("/service", "AuthController.serviceGet")
 
+
+
+
+Route.get("/buying", "AuthController.buying")
+
 Route.get("/detail", "AuthController.detail")
+Route.post("/detail", "AuthController.detailGet")
 Route.get("/detail2", "AuthController.detail2")
 Route.get("/detail3", "AuthController.detail3")
 Route.get("/detail4", "AuthController.detail4")
