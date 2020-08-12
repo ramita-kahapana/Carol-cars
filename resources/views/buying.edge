@@ -1,0 +1,84 @@
+@layout('layout')
+@section("style-section")
+    {{ style("css/buying") }}
+    @endsection
+
+    @section("content")
+    <div class="navbar">
+        <div class="logo">Carol Cars</div>
+        <div class="menu">
+            <a href="/home" class="btn">Home</a>
+            <a href="/promotion" class="btn">Promotion</a>
+            <a href="/product"class="btn">Product</a>
+            <a href="/service"class="btn">Service</a>
+            <a href="/login" id="status" class="btn">Login</a>
+            <a href="/register" class="btn">Register</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <p>Amount to pay Bath</p>
+            <div class="card">
+                <img src="images/0102.jpg" >
+            </div> 
+            <button class="button"  id="myBtn">OK</button> 
+        </div>
+    </div>
+    <div class="footer">
+        <div class="box-footer">
+                <ul>
+                        <p>Carol Cars</p>
+                        <li><a href="/home" >Home</a></li>
+                        <li><a href="/promotion" >promotion</a></li>
+                        <li><a href="/product" >Product</a></li>
+                        <li><a href="/service" >Service</a></li>
+                </ul>
+        </div>
+        <div class="box-footer2">
+                <p>Carol-Cars Motor Vehicle</p>
+                <p>186/8 Moo 1, Wichit, Mueang, Phuket 83000</p>
+                <p>Contact Center</p>
+                <p> (66) 9-9357-5550 24/7 service</p>
+                <p>E-mail contactcenter@carolcars.co.th</p>
+                <p>Line ID @carolcarscontact</p>
+        </div>
+    </div>
+            
+    <div id="myModal" class="modal">
+
+       
+        <div class="modal-content">
+         
+          <div class="text">
+              <p>Thank you for using the service</p>
+              <a href="/product" class="button">Back</a>
+          </div>
+          
+        </div>
+      
+      </div>
+      
+      
+
+
+    <script>
+       
+        var modal = document.getElementById("myModal");
+        
+      
+        var btn = document.getElementById("myBtn");
+        
+      
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        </script>
+    @endsection
