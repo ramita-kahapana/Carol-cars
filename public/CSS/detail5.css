@@ -1,0 +1,117 @@
+.navbar {
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    padding-left: 2vw;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+}
+
+.menu a:hover {
+    background-color: darkgoldenrod;
+    color: black;
+}
+
+.btn {
+    width: auto;
+    text-decoration: none;
+    display: inline-flex;
+    padding: 2vw;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1vw;
+}
+
+.box-footer {
+    width: 50%;
+    height: 100%;
+}
+
+.box-footer2 {
+    width: 50%;
+    height: 100%;
+}
+
+.footer {
+    height: 30%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    flex-direction: column;
+}
+
+.box-s {
+    border: solid black;
+    width: 30%;
+    height: 35%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.modal {
+    height: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.box-m {
+    height: 60%;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 3%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+    font-size: 16px;
+    margin: 5%;
+    cursor: pointer;
+}
+
+p {
+    margin-left: 5%;
+}
+
+img {
+    width: 40%;
+}
