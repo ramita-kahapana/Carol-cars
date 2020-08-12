@@ -133,3 +133,10 @@ h1 {
     width: 50%;
     height: 100%;
 }
+.text p{
+    margin-top: 20px;
+}
+
+.card{
+ margin-bottom: -54px;
+}
