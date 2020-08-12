@@ -21,15 +21,15 @@
             </div>
             <div class="box-s">
                 <div class="box-m">
-                    <p><b>Name</b>: KIA</p>
-                    <p><b>Detail</b>: KIA, the original 2.2-liter turbodiesel engine, but has been optimized for greater performance. 
+                    <p><b> KIA</b></p>
+                    <p> KIA, the original 2.2-liter turbodiesel engine, but has been optimized for greater performance. 
                         By switching to an 8-speed automatic transmission with manual mode. Install electric handbrake. 
                         And automatic braking system As standard equipment for many more models</p>
-                    <p><b>Price</b>: 1,500,000 Bath</p>    
+                    <p> 1,500,000 Bath</p>    
                 </div>
-                <div class="modal">
+                <div class="box-button">
                     <button class="button">Reservation</button>
-                    <button class="button">Buying</button>
+                    <button class="button" id="myBtn">Buying</button>
                 </div>
             </div>
             
@@ -54,4 +54,50 @@
                 <p>Line ID @carolcarscontact</p>
         </div>
     </div>
+        
+    <div id="myModal" class="modal">
+
+       
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="text">
+              <p>1.Complete the detail.</p>
+              <p>2.Check the information.</p>
+          </div>
+          <form action="{{ route('/detail')}}" method="POST">
+            {{ csrfField() }}
+             
+                <label>Name:</label><input type="text" name="name" >
+                <label>Lastname:</label><input type="text" name="lastname" >
+                <label>Address:</label><textarea name="address" rows="4" cols="30"></textarea>
+                <label>Mobile:</label><input type="text" name="phone" >
+             
+                <button class="btn2">Next</button>
+        </form>
+        </div>
+      
+      </div>
+      
+      
+
+
+    <script>
+       
+        var modal = document.getElementById("myModal");
+        
+      
+        var btn = document.getElementById("myBtn");
+        
+      
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        </script>
     @endsection
