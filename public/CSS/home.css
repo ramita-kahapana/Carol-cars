@@ -84,7 +84,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 4%;
+    margin: 2%;
 }
 
 .link {
@@ -107,7 +107,6 @@ h2 {
     justify-content: center;
     color: black;
     font-size: 1vw;
-    background-color: darkgoldenrod;
 }
 
 a {
