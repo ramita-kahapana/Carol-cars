@@ -59,26 +59,24 @@
 
 .box {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     height: 100%;
     width: auto;
     flex-direction: column;
-    margin-top: 5%;
 }
 
 .box-s {
-    margin-bottom: 2%;
     border: solid black;
     width: 30%;
-    height: 50%;
+    height: 45%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
 }
 
 .modal {
-    height: 30%;
+    height: 40%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -86,7 +84,7 @@
 }
 
 .box-m {
-    height: 70%;
+    height: 60%;
 }
 
 .card {
@@ -100,13 +98,13 @@
     background-color: #4CAF50;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 3%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: row;
     font-size: 16px;
-    margin: 5%;
+    margin: 3%;
     cursor: pointer;
 }
 
