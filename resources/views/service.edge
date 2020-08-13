@@ -29,14 +29,17 @@
             <div class="box-form">
             <form action="{{ route('/service')}}" method="POST">
                 {{ csrfField() }}
-                    Name:
-                <label><input type="text" name="name" ></label>
-                Mobile:
-                <label><input type="text" name="mobile" ></label>
-                Report a problem:
-                <label><textarea name="report" rows="4" cols="50"></textarea></label>
-                <button type="submit">OK</button>
+                <label>Name:</label>
+                <input type="text" name="name" >
+                <label>Mobile:</label>
+                <input type="text" name="mobile" >
+                <label>Report a problem:</label>
+                <textarea name="report" rows="4" cols="50"></textarea>
+          
+                    <button type="submit" class="button">OK</button>
+               
                 </form>
+               
             </div>
     </div>
     <div class="footer">
