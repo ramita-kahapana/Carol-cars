@@ -51,6 +51,16 @@ input {
     align-items: center;
     background-color: #eee;
     border: none;
+    margin: 30px 0;
+    padding: 10px;
+}
+
+.text input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    border: none;
     padding: 12px 15px;
     margin: 8px 0;
     padding: 10px;
@@ -64,12 +74,30 @@ input {
     font-size: 12px;
     font-weight: bold;
     width: 50%;
+    cursor: pointer;
+}
+
+.button a {
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(156, 23, 0);
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    width: 43%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    cursor: pointer;
 }
 
 .button {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: auto;
+    cursor: pointer;
 }
 
 a {
@@ -83,8 +111,10 @@ h1 {
     align-items: center;
 }
 
-.button2 {
-    margin-left: 30px;
-  }
-
- 
+.container {
+    height: auto;
+    width: 20%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}

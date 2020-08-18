@@ -1,6 +1,6 @@
 @layout('layout')
 @section("style-section")
-    {{ style("css/detail4") }}
+    {{ style("css/buying") }}
     @endsection
 
     @section("content")
@@ -15,28 +15,16 @@
             <a href="/register" class="btn">Register</a>
         </div>
     </div>
-        <div class="box">
-            <div class="card">
-                <img src="images/car3.jpg" >
-            </div>
-            <div class="box-s">
-                <div class="box-m">
-                    <p>Hyundai H-1 “Hyundai H-One”</p>
-                    <p> Hyundai H-1 “Hyundai H-One” model year 2020 has been redesigned the grille with additional detailing. 
-                        Increase sportiness and versatility as well Newly designed chrome accessories around the car, projector lens headlights Illuminate,
-                        elegant design and LED Daytime Running Lights and LED rear lights, side mirrors with LED turn indicators, unique in every dimension. In addition,
-                        it also comes with new 16-inch alloy wheels that stand out as unique. 
-                        The narrowest turning radius is only 5.6 meters, making it a large MPV like the H-1 that is easy to drive and exceedingly agile.</p>
-                    <p> 2,000,000 Bath</p>    
-                </div>
-                <div class="modal">
-                    <button class="button">Reservation</button>
-                    <button class="button">Buying</button>
-                </div>
-            </div>
-            
-        </div>
 
+    <div class="container">
+        <div class="box">
+            <p>Amount to pay 1,500,000 Bath</p>
+            <div class="card">
+                <img src="images/0102.jpg" >
+            </div> 
+            <button class="button"  id="myBtn">OK</button> 
+        </div>
+    </div>
     <div class="footer">
         <div class="box-footer">
                 <ul>
@@ -56,4 +44,41 @@
                 <p>Line ID @carolcarscontact</p>
         </div>
     </div>
+            
+    <div id="myModal" class="modal">
+
+       
+        <div class="modal-content">
+         
+          <div class="text">
+              <p>Thank you for using the service</p>
+              <a href="/product" class="button">Back</a>
+          </div>
+          
+        </div>
+      
+      </div>
+      
+      
+
+
+    <script>
+       
+        var modal = document.getElementById("myModal");
+        
+      
+        var btn = document.getElementById("myBtn");
+        
+      
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        </script>
     @endsection

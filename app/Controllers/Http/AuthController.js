@@ -60,6 +60,19 @@ class AuthController {
 
         return response.redirect("service", { arr })
     }
+    async detailGet({ request, response }) {
+        const { name, lastname, address, phone } = request.body
+        await Database.insert({ name, lastname, address, phone }).into("details")
+
+        return response.redirect("buying", { arr })
+    }
+
+
+
+    buying({ view, request, response }) {
+        return view.render("buying", { arr });
+    }
+
     detail({ view, request, response }) {
         return view.render("detail", { arr });
     }

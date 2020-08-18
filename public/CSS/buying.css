@@ -38,6 +38,12 @@
     font-size: 1vw;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
 .box-footer {
     width: 50%;
     height: 100%;
@@ -57,41 +63,34 @@
     align-items: center;
 }
 
+.card {
+    width: 300px;
+    height: 300px;
+    margin: 5rem;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: white;
+    height: 100%;
+}
+
 .box {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: auto;
     flex-direction: column;
-}
-
-.box-s {
-    border: solid black;
-    width: 30%;
-    height: 40%;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-}
-
-.modal {
-    height: 40%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: row;
-}
-
-.box-m {
+    background-color: white;
     height: 60%;
+    width: 35%;
+    border: 2px solid black;
 }
 
-.card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2%;
+a {
+    color: white;
+    text-decoration: none;
 }
 
 .button {
@@ -100,23 +99,49 @@
     color: white;
     padding: 3%;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
     font-size: 16px;
-    margin: 3%;
+    width: 30%;
     cursor: pointer;
 }
 
-p {
-    margin-left: 5%;
+.button:hover {
+    background-color: darkgoldenrod;
+    color: black;
 }
 
-img {
-    width: 30%;
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-a {
-    text-decoration: none;
-    color: white;
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
